@@ -1,0 +1,109 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            height: 70vh;
+            width: 70vh;
+            background-image: url("night.jpg");
+            background-size: cover;
+            background-position: center;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(255, 187, 238, 0.35);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            gap: 40px;
+        }
+
+
+        #timer {
+            font-size: 90px;
+            font-weight: 700;
+            color: white;
+
+        }
+
+
+        .options {
+            display: flex;
+            gap: 30px;
+        }
+
+
+        .options button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            padding: 16px 30px;
+            font-size: 24px;
+            font-weight: 600;
+
+            border: none;
+            border-radius: 18px;
+
+        }
+
+        #start {
+            background: linear-gradient(135deg, #ff7a7a, #6ee7f9);
+
+            color: white
+        }
+
+        #reset {
+            background: linear-gradient(135deg, #52dcff, #ff95e5);
+            color: white;
+        }
+
+        #pause {
+            background: linear-gradient(135deg, #52dcff, #ff95e5);
+            color: white;
+        }
+
+
+        h1 {
+            color: white;
+            font-size: 44px;
+
+        }
+
+        .timer-wrapper {
+            position: relative;
+            width: 220px;
+            height: 220px;
+        }
+
+        .timer-wrapper svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(-90deg);
+        }
+
+        #timer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            color: white;
+            font-weight: 700;
+        }
+
+        .options svg {
+            display: block;
+        }
